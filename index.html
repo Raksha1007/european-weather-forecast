@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore seven-day weather forecasts for European destinations and plan your next trip.">
+  <title>EuroCast | European Weather Forecast</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" type="module"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="EuroCast home"><span class="brand-icon">☀</span> EuroCast</a>
+    <span class="header-note">Weather for your next adventure</span>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero">
+      <p class="eyebrow">PLAN WITH CONFIDENCE</p>
+      <h1>Find your forecast.<br><span>Follow the sunshine.</span></h1>
+      <p class="hero-copy">Explore the next seven days across European destinations and find the right time for your next getaway.</p>
+    </section>
+
+    <section class="search-panel" aria-labelledby="search-heading">
+      <div>
+        <label for="citySelect" id="search-heading">Choose a European destination</label>
+        <p class="helper-text">Select a city to see its seven-day outlook.</p>
+      </div>
+      <div class="search-controls">
+        <select id="citySelect" aria-label="Choose a city" disabled>
+          <option>Loading cities…</option>
+        </select>
+        <button id="forecastButton" type="button" disabled>Show forecast <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <section class="forecast-section" aria-live="polite">
+      <div id="statusMessage" class="status-message">Loading your destination list…</div>
+      <div id="forecastHeader" class="forecast-header hidden">
+        <div>
+          <p class="eyebrow">YOUR DESTINATION</p>
+          <h2 id="destinationName"> Select a Destination</h2>
+          <p id="forecastSubtitle" class="muted"></p>
+        </div>
+        <div class="forecast-tag">7-day forecast</div>
+      </div>
+      <div id="forecastGrid" class="forecast-grid"></div>
+    </section>
+
+    <section class="travel-cta">
+      <div class="cta-symbol" aria-hidden="true">✈</div>
+      <div>
+        <p class="eyebrow">YOUR NEXT CHAPTER</p>
+        <h2>A forecast is just the beginning.</h2>
+        <p>Found a city you love? Start planning the places you’ll explore, the food you’ll try, and the memories you’ll make.</p>
+      </div>
+      <a href="https://www.europeanbestdestinations.com/" target="_blank" rel="noopener noreferrer">Explore destinations ↗</a>
+    </section>
+
+    <p class="data-note">Forecast data provided by <a href="https://www.7timer.info/doc.php?lang=en" target="_blank" rel="noopener noreferrer">7Timer!</a>. Forecasts are estimates and may change.</p>
+  </main>
+
+  <footer class="site-footer">Made for curious travellers <span aria-hidden="true">♥</span></footer>
+</body>
+</html>
